@@ -28,6 +28,7 @@ model6<-coxph(Surv(dm2_time,dm2)~module+airpollutant+age+sex+ses+bmi+prs_dm2+eth
 # The associations of each protein module with T2D were obtained by running the above code.
 
 
+
 ## MEDIATION ANALYSIS
 
 mediation <- mediate(modelMediate, modelDirect, treat = airpollutant, mediator = module)
